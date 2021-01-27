@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/card_layout_smooth"
+    android:layout_height="wrap_content"
+  android:layout_marginBottom="5dp"
+    android:paddingLeft="20dp"
+    >
+<RelativeLayout
+
+    android:background="@drawable/outer_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageRelativeLayout"
+    android:layout_centerVertical="true">
+    <ImageView
+        android:id="@+id/imgDropDownMenuIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/tamilnadu"
+        />
+</RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/imageRelativeLayout"
+    android:layout_centerVertical="true"
+    android:gravity="center"
+    android:layout_centerHorizontal="true">
+    <TextView
+        android:id="@+id/txtDropDownLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+
+        android:text="Residential"
+
+        />
+</RelativeLayout>
+
+
+</RelativeLayout>

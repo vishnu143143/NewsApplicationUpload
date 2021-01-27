@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+android:background="@drawable/grad_bg"
+    tools:context=".Activities.MainActivity"
+
+    >
+    <RelativeLayout
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/image_view_logo"
+            android:layout_width="80dp"
+
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view_logo"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_login"
+                android:text="Login"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginTop="20dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/tv_login">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UserName"
+                        android:textSize="15sp"
+                        android:textAllCaps="true"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        >
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/gmailText"
+                        android:background="@drawable/et_bg">
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UserName"
+                        android:textSize="15sp"
+                        android:textAllCaps="true"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        >
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/pass"
+                        android:background="@drawable/et_bg">
+
+                    </EditText>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:id="@+id/login"
+                android:text="Login"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:background="@drawable/bt_bg"
+                android:layout_below="@+id/line">
+            </Button>
+
+           <TextView
+               android:paddingTop="20dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="20dp"
+               android:id="@+id/newAccount"
+               android:text="Don't have an Account?"
+               android:layout_below="@+id/login">
+
+           </TextView>
+
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_below="@+id/login"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/newAccount"
+                android:gravity="center"
+                android:id="@+id/register"
+                android:text="REGISTER"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

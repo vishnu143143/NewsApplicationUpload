@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Register">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="153dp"
+        android:paddingTop="40dp"
+        android:src="@drawable/user1"
+
+        >
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingTop="10dp"
+
+        >
+
+        <ImageView
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/email">
+            1</ImageView>
+
+        <EditText
+            android:id="@+id/gmail_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:hint="gmail"
+
+            android:padding="10dp"
+            android:paddingLeft="2dp" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/password">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/password_one"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:hint="password"
+
+                android:paddingLeft="2dp" />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/password">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/password_two"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:hint="password"
+
+            android:paddingLeft="2dp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:background="#2196F3"
+        android:text="Register" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center"
+
+            android:text="not registered ?" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:text="login"
+            android:textColor="#2196F3"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

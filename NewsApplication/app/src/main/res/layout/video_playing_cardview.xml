@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:background="@drawable/card_layout_smooth"
+    android:layout_marginBottom="5dp"
+   >
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/imageViewLayout"
+       android:gravity="center"
+
+       android:padding="10dp"
+       >
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:background="@drawable/card_layout_smooth"
+           android:id="@+id/videoImageView"
+           android:adjustViewBounds="true"
+           android:layout_centerInParent="true"
+           android:scaleType="centerCrop"
+
+
+          >
+       </ImageView>
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageViewLayout"
+        android:layout_centerVertical="true"
+
+        >
+
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topTextLayout"
+
+
+
+        >
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:id="@+id/channelName"
+            android:gravity="center"
+
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/topTextLayout">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/channelSecondName"
+            android:layout_height="wrap_content"
+            >
+
+        </TextView>
+    </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

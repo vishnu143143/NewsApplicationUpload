@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="MyFeed"
+    android:id="@+id/toolBarHeading"
+
+    android:textStyle="bold"
+    android:textSize="30dp"
+    android:textColor="@color/colorPrimaryDark"
+    android:layout_centerInParent="true">
+
+</TextView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingRight="10dp"
+
+                android:id="@+id/imageThree"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_refresh_black_24dp"
+                />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>

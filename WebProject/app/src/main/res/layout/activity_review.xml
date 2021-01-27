@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ReviewActivity">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="reviewNAme"
+    android:id="@+id/reviewName">
+
+</EditText>
+    <EditText
+        android:hint="reviewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewDescription">
+
+    </EditText>
+    <EditText
+        android:hint="reviewRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewRating">
+
+    </EditText>
+    <EditText
+        android:hint="reviewProductId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewProductId">
+
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1"
+        android:text="Submit"
+        >
+
+    </Button>
+</LinearLayout>
